@@ -22,7 +22,7 @@ class MainWindow(QMainWindow):
 
 
     def change_main_page(self,str):
-        max_index = 4
+        max_index = 1
         min_index = 0
         current = self.ui.stackedWidget.currentIndex()
         if str == 'up':

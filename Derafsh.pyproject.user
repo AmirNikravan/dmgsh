@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 13.0.1, 2024-05-26T21:23:45. -->
+<!-- Written by QtCreator 13.0.1, 2024-05-28T18:33:05. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -200,7 +200,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">AnalogGaugeWidget.py</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/nullptr/programming/Derafsh/AnalogGaugeWidget.py</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/nullptr/programming/Derafsh/AnalogGaugeWidget.py</value>
-    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/nullptr/programming/Derafsh/AnalogGaugeWidget.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>

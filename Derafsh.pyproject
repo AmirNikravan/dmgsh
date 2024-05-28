@@ -2,6 +2,7 @@
     "files": [
         "mainwindow.py",
         "form.ui",
-        "AnalogGaugeWidget.py"
+        "AnalogGaugeWidget.py",
+        "rsc.qrc"
     ]
 }
