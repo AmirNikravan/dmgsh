@@ -16,8 +16,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
-    QLabel, QMainWindow, QSizePolicy, QSpacerItem,
-    QStackedWidget, QToolButton, QVBoxLayout, QWidget)
+    QLabel, QMainWindow, QPushButton, QSizePolicy,
+    QSpacerItem, QStackedWidget, QToolButton, QVBoxLayout,
+    QWidget)
 
 from AnalogGaugeWidget import AnalogGaugeWidget
 import rc_rsc
@@ -414,9 +415,44 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.gauges)
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
-        self.label_3 = QLabel(self.page_3)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(253, 50, 111, 191))
+        self.verticalLayout_20 = QVBoxLayout(self.page_3)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.frame_20 = QFrame(self.page_3)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.frame_21 = QFrame(self.frame_20)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setGeometry(QRect(130, 30, 101, 131))
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.gridLayout_2 = QGridLayout(self.frame_21)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.pushButton_control = QPushButton(self.frame_21)
+        self.pushButton_control.setObjectName(u"pushButton_control")
+        self.pushButton_control.setMinimumSize(QSize(74, 86))
+        self.pushButton_control.setStyleSheet(u"            #pushButton_control {\n"
+"                background-color: rgb(93, 93, 93);\n"
+"                border-style: outset;\n"
+"                border-width: 12px;\n"
+"                border-radius: 40px;\n"
+"                border-color: rgb(232, 232, 232);\n"
+"            }\n"
+"            #pushButton_control:pressed {\n"
+"                background-color: red;\n"
+"            }")
+
+        self.gridLayout_2.addWidget(self.pushButton_control, 0, 0, 1, 1)
+
+        self.label_20 = QLabel(self.frame_21)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setMaximumSize(QSize(16777215, 14))
+
+        self.gridLayout_2.addWidget(self.label_20, 1, 0, 1, 1)
+
+
+        self.verticalLayout_20.addWidget(self.frame_20)
+
         self.stackedWidget.addWidget(self.page_3)
 
         self.horizontalLayout.addWidget(self.stackedWidget)
@@ -490,7 +526,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -516,7 +552,8 @@ class Ui_MainWindow(object):
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"lop", None))
+        self.pushButton_control.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.toolButton_up.setText(QCoreApplication.translate("MainWindow", u"up", None))
         self.toolButton_down.setText(QCoreApplication.translate("MainWindow", u"down", None))
     # retranslateUi
