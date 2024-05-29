@@ -16,9 +16,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
-    QLabel, QMainWindow, QPushButton, QSizePolicy,
-    QSpacerItem, QStackedWidget, QToolButton, QVBoxLayout,
-    QWidget)
+    QLabel, QMainWindow, QProgressBar, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QToolButton,
+    QVBoxLayout, QWidget)
 
 from AnalogGaugeWidget import AnalogGaugeWidget
 import rc_rsc
@@ -935,6 +935,23 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.frame_20, 0, 0, 1, 1)
 
         self.stackedWidget.addWidget(self.page_3)
+        self.gmp = QWidget()
+        self.gmp.setObjectName(u"gmp")
+        self.stackedWidget_2 = QStackedWidget(self.gmp)
+        self.stackedWidget_2.setObjectName(u"stackedWidget_2")
+        self.stackedWidget_2.setGeometry(QRect(-20, 20, 741, 501))
+        self.stackedWidget_2.setStyleSheet(u"background-color: rgb(198, 70, 0);")
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.progressBar = QProgressBar(self.page)
+        self.progressBar.setObjectName(u"progressBar")
+        self.progressBar.setGeometry(QRect(100, 230, 131, 31))
+        self.progressBar.setValue(24)
+        self.stackedWidget_2.addWidget(self.page)
+        self.page_2 = QWidget()
+        self.page_2.setObjectName(u"page_2")
+        self.stackedWidget_2.addWidget(self.page_2)
+        self.stackedWidget.addWidget(self.gmp)
 
         self.horizontalLayout.addWidget(self.stackedWidget)
 
@@ -1007,7 +1024,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
