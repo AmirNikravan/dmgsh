@@ -20,7 +20,6 @@ class MainWindow(QMainWindow):
         self.ui.toolButton_down.clicked.connect(lambda:self.change_main_page('down'))
 
 
-
     def change_main_page(self,str):
         max_index = self.ui.stackedWidget.count()-1
         min_index = 0
