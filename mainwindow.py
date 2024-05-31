@@ -18,7 +18,23 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.ui.toolButton_up.clicked.connect(lambda:self.change_main_page('up'))
         self.ui.toolButton_down.clicked.connect(lambda:self.change_main_page('down'))
+        self.ui.toolButton_p1f.clicked.connect(lambda:self.change_bar_page('forward'))
+        self.ui.toolButton_p1b.clicked.connect(lambda:self.change_bar_page('before'))
 
+    def change_bar_page(self,str):
+        max_index = self.ui.stackedWidget_bar.count()-1
+        min_index = 0
+        current = self.ui.stackedWidget_bar.currentIndex()
+        if str == 'forward':
+            if current == max_index:
+                self.ui.stackedWidget_bar.setCurrentIndex(min_index)
+            else:
+                self.ui.stackedWidget_bar.setCurrentIndex(current+1)
+        elif str == 'before':
+            if current == min_index:
+                self.ui.stackedWidget_bar.setCurrentIndex(max_index)
+            else:
+                self.ui.stackedWidget_bar.setCurrentIndex(current -1 )
 
     def change_main_page(self,str):
         max_index = self.ui.stackedWidget.count()-1
