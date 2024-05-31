@@ -1554,7 +1554,7 @@
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_10">
            <item>
-            <widget class="QStackedWidget" name="stackedWidget_2">
+            <widget class="QStackedWidget" name="stackedWidget_bar">
              <property name="maximumSize">
               <size>
                <width>900</width>
@@ -1565,7 +1565,7 @@
               <string notr="true">background-color: rgb(255, 255, 255);</string>
              </property>
              <property name="currentIndex">
-              <number>2</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="page">
               <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -2709,7 +2709,7 @@
                    </rect>
                   </property>
                   <property name="text">
-                   <string>2</string>
+                   <string>3</string>
                   </property>
                  </widget>
                  <widget class="Line" name="line_22">
@@ -2923,7 +2923,7 @@
                    </rect>
                   </property>
                   <property name="text">
-                   <string>1</string>
+                   <string>4</string>
                   </property>
                  </widget>
                  <widget class="QLabel" name="label_109">
@@ -3252,7 +3252,7 @@
                    </rect>
                   </property>
                   <property name="text">
-                   <string>1</string>
+                   <string>5</string>
                   </property>
                  </widget>
                  <widget class="QLabel" name="label_121">
@@ -3402,12 +3402,139 @@
                </item>
                <item>
                 <widget class="QFrame" name="frame_30">
+                 <property name="maximumSize">
+                  <size>
+                   <width>113</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="frameShape">
                   <enum>QFrame::StyledPanel</enum>
                  </property>
                  <property name="frameShadow">
                   <enum>QFrame::Raised</enum>
                  </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_25">
+                  <item>
+                   <widget class="QLabel" name="label_88">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="sizeIncrement">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>1.Speed</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_89">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>2.Exhaust Temperature BankA</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_90">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>3.Exhaust Temperature BankB</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_91">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>4.Air Temperature After Cooler Bank A</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_92">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>5.Air Temperature After Cooler Bank B</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_13">
+                    <item>
+                     <widget class="QToolButton" name="toolButton_4">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_93">
+                      <property name="font">
+                       <font>
+                        <pointsize>6</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>1 Of  3</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QToolButton" name="toolButton_3">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
                 </widget>
                </item>
               </layout>
@@ -5261,7 +5388,9 @@
                    </rect>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true"/>
+                   <string notr="true">QProgressBar::chunk {
+    background-color: green;
+}</string>
                   </property>
                   <property name="maximum">
                    <number>10</number>

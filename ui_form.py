@@ -1460,8 +1460,70 @@ class Ui_MainWindow(object):
 
         self.frame_30 = QFrame(self.page)
         self.frame_30.setObjectName(u"frame_30")
+        self.frame_30.setMaximumSize(QSize(113, 16777215))
         self.frame_30.setFrameShape(QFrame.StyledPanel)
         self.frame_30.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_25 = QVBoxLayout(self.frame_30)
+        self.verticalLayout_25.setObjectName(u"verticalLayout_25")
+        self.label_88 = QLabel(self.frame_30)
+        self.label_88.setObjectName(u"label_88")
+        self.label_88.setMaximumSize(QSize(16777215, 20))
+        self.label_88.setSizeIncrement(QSize(0, 0))
+
+        self.verticalLayout_25.addWidget(self.label_88)
+
+        self.label_89 = QLabel(self.frame_30)
+        self.label_89.setObjectName(u"label_89")
+        self.label_89.setMinimumSize(QSize(0, 0))
+        self.label_89.setMaximumSize(QSize(16777215, 50))
+        self.label_89.setWordWrap(True)
+
+        self.verticalLayout_25.addWidget(self.label_89)
+
+        self.label_90 = QLabel(self.frame_30)
+        self.label_90.setObjectName(u"label_90")
+        self.label_90.setMaximumSize(QSize(16777215, 50))
+        self.label_90.setWordWrap(True)
+
+        self.verticalLayout_25.addWidget(self.label_90)
+
+        self.label_91 = QLabel(self.frame_30)
+        self.label_91.setObjectName(u"label_91")
+        self.label_91.setMaximumSize(QSize(16777215, 50))
+        self.label_91.setWordWrap(True)
+
+        self.verticalLayout_25.addWidget(self.label_91)
+
+        self.label_92 = QLabel(self.frame_30)
+        self.label_92.setObjectName(u"label_92")
+        self.label_92.setMaximumSize(QSize(16777215, 50))
+        self.label_92.setWordWrap(True)
+
+        self.verticalLayout_25.addWidget(self.label_92)
+
+        self.horizontalLayout_13 = QHBoxLayout()
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.toolButton_4 = QToolButton(self.frame_30)
+        self.toolButton_4.setObjectName(u"toolButton_4")
+
+        self.horizontalLayout_13.addWidget(self.toolButton_4)
+
+        self.label_93 = QLabel(self.frame_30)
+        self.label_93.setObjectName(u"label_93")
+        font = QFont()
+        font.setPointSize(6)
+        self.label_93.setFont(font)
+
+        self.horizontalLayout_13.addWidget(self.label_93)
+
+        self.toolButton_3 = QToolButton(self.frame_30)
+        self.toolButton_3.setObjectName(u"toolButton_3")
+
+        self.horizontalLayout_13.addWidget(self.toolButton_3)
+
+
+        self.verticalLayout_25.addLayout(self.horizontalLayout_13)
+
 
         self.horizontalLayout_8.addWidget(self.frame_30)
 
@@ -1994,7 +2056,9 @@ class Ui_MainWindow(object):
         self.progressBar_12 = QProgressBar(self.frame_40)
         self.progressBar_12.setObjectName(u"progressBar_12")
         self.progressBar_12.setGeometry(QRect(50, 40, 61, 381))
-        self.progressBar_12.setStyleSheet(u"")
+        self.progressBar_12.setStyleSheet(u"QProgressBar::chunk {\n"
+"    background-color: green;\n"
+"}")
         self.progressBar_12.setMaximum(10)
         self.progressBar_12.setValue(9)
         self.progressBar_12.setTextVisible(False)
@@ -2383,7 +2447,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.stackedWidget.setCurrentIndex(2)
-        self.stackedWidget_2.setCurrentIndex(2)
+        self.stackedWidget_2.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2524,6 +2588,14 @@ class Ui_MainWindow(object):
         self.label_129.setText(QCoreApplication.translate("MainWindow", u"100 -", None))
         self.label_132.setText(QCoreApplication.translate("MainWindow", u"110 -", None))
         self.label_133.setText(QCoreApplication.translate("MainWindow", u"120 -", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"1.Speed", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"2.Exhaust Temperature BankA", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"3.Exhaust Temperature BankB", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"4.Air Temperature After Cooler Bank A", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"5.Air Temperature After Cooler Bank B", None))
+        self.toolButton_4.setText(QCoreApplication.translate("MainWindow", u"...", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"1 Of  3", None))
+        self.toolButton_3.setText(QCoreApplication.translate("MainWindow", u"...", None))
         self.label_160.setText(QCoreApplication.translate("MainWindow", u"10 -", None))
         self.label_161.setText(QCoreApplication.translate("MainWindow", u"1", None))
         self.label_162.setText(QCoreApplication.translate("MainWindow", u"20 -", None))

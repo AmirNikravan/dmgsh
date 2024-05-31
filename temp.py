@@ -1,49 +1,50 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QProgressBar, QPushButton
 
-class VerticalLineDemo(QWidget):
+class ProgressBarDemo(QWidget):
     def __init__(self):
         super().__init__()
         
         self.initUI()
         
     def initUI(self):
-        self.setWindowTitle('Vertical Line with Different Background Colors')
+        self.setWindowTitle('Progress Bar Color Change Demo')
         
         # Create a vertical layout
-        layout = QVBoxLayout()
+        layout = QVBoxLayout(self)
         
-        # Create a horizontal layout for line and widgets
-        h_layout = QHBoxLayout()
+        # Create a progress bar
+        self.progressBar = QProgressBar(self)
+        self.progressBar.setValue(50)
         
-        # Create a left and a right line
-        self.leftLine = QLabel(self)
-        self.leftLine.setStyleSheet("border-left: 2px solid lightgray;")
-
-        self.rightLine = QLabel(self)
-        self.rightLine.setStyleSheet("border-left: 2px solid blue;")
-
-        # Add the left and right lines to the horizontal layout
-        h_layout.addWidget(self.leftLine)
-        h_layout.addWidget(self.rightLine)
+        # Set initial style for the progress bar
+        self.setProgressBarColor('blue')
         
-        # Add the horizontal layout to the main layout
-        layout.addLayout(h_layout)
+        # Create a button to change the progress bar color
+        self.changeColorButton = QPushButton('Change Color to Green', self)
+        self.changeColorButton.clicked.connect(self.changeColor)
         
-        # Create a button to change the background color of the right side
-        self.changeColorButton = QPushButton('Change Right Side Color', self)
-        self.changeColorButton.clicked.connect(self.changeRightColor)
+        # Add widgets to the layout
+        layout.addWidget(self.progressBar)
         layout.addWidget(self.changeColorButton)
         
         # Set the layout for the main window
         self.setLayout(layout)
     
-    def changeRightColor(self):
-        # Change the background color of the right side line
-        self.rightLine.setStyleSheet("border-left: 2px solid green;")
+    def setProgressBarColor(self, color):
+        # Set the stylesheet for the progress bar
+        self.progressBar.setStyleSheet(f"""
+            QProgressBar::chunk {{
+                background-color: {color};
+            }}
+        """)
+    
+    def changeColor(self):
+        # Change the color of the progress bar to green
+        self.setProgressBarColor('green')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = VerticalLineDemo()
-    ex.show()
+    demo = ProgressBarDemo()
+    demo.show()
     sys.exit(app.exec_())
