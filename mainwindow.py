@@ -20,6 +20,10 @@ class MainWindow(QMainWindow):
         self.ui.toolButton_down.clicked.connect(lambda:self.change_main_page('down'))
         self.ui.toolButton_p1f.clicked.connect(lambda:self.change_bar_page('forward'))
         self.ui.toolButton_p1b.clicked.connect(lambda:self.change_bar_page('before'))
+        self.ui.toolButton_p2b.clicked.connect(lambda :self.change_bar_page('before'))
+        self.ui.toolButton_p2f.clicked.connect(lambda:self.change_bar_page('forward'))
+        self.ui.toolButton_p3b.clicked.connect(lambda:self.change_bar_page('before'))
+        self.ui.toolButton_p3f.clicked.connect(lambda:self.change_bar_page('forward'))
 
     def change_bar_page(self,str):
         max_index = self.ui.stackedWidget_bar.count()-1
