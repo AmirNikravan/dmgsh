@@ -22,15 +22,21 @@
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="maximumSize">
        <size>
-        <width>16777209</width>
+        <width>16777215</width>
         <height>16777215</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
        </size>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(39, 51, 109);</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="gauges">
        <layout class="QGridLayout" name="gridLayout">
@@ -618,7 +624,7 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="page_3">
+      <widget class="QWidget" name="lop">
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0">
          <widget class="QFrame" name="frame_20">
@@ -6738,6 +6744,225 @@
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="table">
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>180</number>
+          </attribute>
+          <row>
+           <property name="text">
+            <string>Oil Pressure Switch Signal</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Air Flap Switch Signal</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>ECU crack Terminate Signal</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>ECU Fail Signa</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>ECU Over Speed Signal</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Exhuast Temperature Bank A</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Exhuast Temperature Bank B</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Air Temperaturer After Cooler Bank A</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Air Temperaturer After Cooler Bank A</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Sea Water Temperature</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Oil Temperature</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Fresh Water Temperature After Thermostat</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>New Row</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Fuel Rack Position</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Oil Pressure</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Fuel Pressure</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Air Boost Pressure</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>Measuring Point</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Value</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Unit</string>
+           </property>
+          </column>
+          <item row="0" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="8" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="9" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="10" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="11" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="12" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="13" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="14" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="15" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="16" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="17" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item row="18" column="0">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </item>
     <item>
@@ -6750,8 +6975,14 @@
       </property>
       <property name="maximumSize">
        <size>
-        <width>60</width>
+        <width>88</width>
         <height>481624</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
        </size>
       </property>
       <property name="styleSheet">
